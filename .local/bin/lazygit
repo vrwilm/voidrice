@@ -1,0 +1,10 @@
+#!/bin/sh
+
+while getopts ":a:u:p:r:h" o; do case "${o}" in
+	h) printf "Arguments:\n -a: uses git add . then commit with the message\n -u: uses git add -u then commit with the message\n -p: git add . then commit with the message then push\n -r: undo last commit but keep file modifications" ;;
+	a) git add . && git commit -m "${OPTARG}" ;;
+	u) git add -u && git commit -m "${OPTARG}" ;;
+	p) git add . && git commit -m "${OPTARG}" && git push ;;
+  r) git reset --soft HEAD~1 ;;
+	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit 1 ;;
+esac done
