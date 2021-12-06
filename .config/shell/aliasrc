@@ -53,5 +53,5 @@ alias \
 alias \
 	ca="conda activate" \
 	cde="conda deactivate" \
-	cicf="conda install -c conda-forge" \
-	cscf="conda search -c conda-forge" \
+	ci="mamba install -c conda-forge" \
+	cs="mamba repoquery search -c conda-forge" \
