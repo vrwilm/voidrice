@@ -11,7 +11,7 @@
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer
-colorscheme = "synthwave84"
+colorscheme = "material"
 colorscheme_bg = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors
@@ -42,8 +42,8 @@ auto_completion_tab_key_behavior = "cycle"
 
 [[layers]]
 name = 'shell'
-default_position = 'top'
-default_height = 30
+default_position = 'bottom'
+default_height = 15
 
 [[layers]]
 name = "lang#sh"
@@ -77,4 +77,8 @@ merged = false
 
 [[custom_plugins]]
 repo='dylanaraps/wal.vim'
+merged = false
+
+[[custom_plugins]]
+repo='andymass/vim-matchup'
 merged = false
