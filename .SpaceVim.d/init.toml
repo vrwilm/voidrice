@@ -28,6 +28,7 @@ statusline_unicode = false
 # Enable vim compatible mode, avoid changing origin vim key bindings
 vimcompatible = true
 # bootstrap_before = 'myspacevim#before'
+automatic_update = true
 bootstrap_after = 'myspacevim#after'
 
 # Enable autocomplete layer
@@ -61,6 +62,9 @@ name = 'lang#javascript'
 name = 'sudo'
 
 [[layers]]
+name = "fzf"
+
+[[layers]]
 name = "lang#python"
 python_interpreter = '/usr/bin/python'
 #python_interpreter = '/home/user/miniconda3/envs/beamdata/bin/python'
@@ -87,3 +91,6 @@ merged = false
 [[custom_plugins]]
 repo='NLKNguyen/papercolor-theme'
 merged = false
+  
+[[custom_plugins]]
+repo='dbeniamine/cheat.sh-vim'
