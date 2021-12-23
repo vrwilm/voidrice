@@ -1,20 +1,24 @@
 function! myspacevim#after() abort
-  " let g:neomake_javascript_eslint_maker = {
-  "       \ 'exe': 'npx',
-  "       \ 'args': ['--quiet', 'eslint', '--format=compact'],
-  "       \ 'errorformat': '%E%f: line %l, col %c, Error - %m,' .
-  "       \ '%W%f: line %l, col %c, Warning - %m,%-G,%-G%*\d problems%#',
-  "       \ 'cwd': '%:p:h',
-  "       \ 'output_stream': 'stdout',
-  "       \ }
   let g:neoformat_python_black = {
   \ 'exe': 'black',
   \ 'stdin': 1,
   \ 'args': ['-q', '-'],
   \ }
+  " let g:neoformat_typescript_prettier = {
+  " \ 'exe': $PWD . './node_modules/.bin/prettier',
+  " \ 'args': ['--write', '--config .prettierrc'],
+  " \ 'replace': 1
+  " \ }
+  let g:neoformat_enabled_javascript = [ 'prettier', 'eslint' ]
+  let g:neoformat_enabled_typescript = [ 'prettier' ]
+  let g:neoformat_enabled_json = [ 'prettier' ]
+  let g:neoformat_enabled_graphql = [ 'prettier' ]
+  let g:neoformat_enabled_css = [ 'prettier' ]
+  let g:neoformat_enabled_html = [ 'prettier' ]
+  let g:neoformat_enabled_htmldjango = [ 'prettier' ]
+  let g:neoformat_enabled_yaml = [ 'prettier' ]
+  let g:neoformat_enabled_markdown = [ 'prettier' ]
   let g:neoformat_enabled_python = ['black']
-  " let g:neomake_javascript_jsx_enabled_makers = ['eslint']
-  " let g:neoformat_enabled_javascript = ['npxprettier']
   set ma
-  set ic
+  set noic
 endfunction

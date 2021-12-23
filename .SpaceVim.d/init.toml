@@ -38,7 +38,7 @@ name = "colorscheme"
 
 [[layers]]
 name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
+#auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "cycle"
 
 [[layers]]
@@ -59,6 +59,9 @@ name = 'lang#html'
 name = 'lang#javascript'
 
 [[layers]]
+name = 'lang#typescript'
+
+[[layers]]
 name = 'sudo'
 
 [[layers]]
@@ -68,6 +71,31 @@ name = "fzf"
 name = "lang#python"
 python_interpreter = '/usr/bin/python'
 #python_interpreter = '/home/user/miniconda3/envs/beamdata/bin/python'
+
+[[layers]]
+name = "lang#go"
+
+[[layers]]
+name = "lang#rust"
+
+[[layers]]
+name = "lang#markdown"
+enabled_formater=["prettier"]
+
+[[layers]]
+name = "lang#yaml"
+
+[[layers]]
+name = "lang#json"
+
+[[layers]]
+name = "lang#toml"
+
+[[layers]]
+name = "lang#css"
+
+[[layers]]
+name = "lang#sql"
 
 [[layers]]
 name = "lang#latex"
